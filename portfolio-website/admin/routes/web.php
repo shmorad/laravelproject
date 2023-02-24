@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VisitorController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,5 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/',[HomeController::class,'homeIndex']);
 Route::get('/visitor',[VisitorController::class,'visitorIndex']);
+Route::get('/service',[ServiceController::class,'serviceIndex']);
+Route::get('/getservice',[ServiceController::class,'getServicesData']);
