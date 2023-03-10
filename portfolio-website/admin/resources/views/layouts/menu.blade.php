@@ -1,4 +1,4 @@
-{{-- <div id="main-wrapper">
+<div id="main-wrapper">
     <header class="topbar">
         <nav class="navbar top-navbar navbar-expand-md navbar-light">
             <div class="navbar-collapse">
@@ -8,7 +8,7 @@
                  <li class="nav-item mt-3">ADMIN</li>
                 </ul>
                 <ul class="navbar-nav my-lg-0">
-                    <li class="nav-item"><a href="" class="btn btn-sm btn-danger">Logout</a></li>
+                    <li class="nav-item"><a href="{{url('/LogOut')}}" class="btn btn-sm btn-danger">Logout</a></li>
                 </ul>
             </div>
         </nav>
@@ -20,10 +20,15 @@
                     <li class="nav-devider mt-0" style="margin-bottom: 5px"></li>
                     <li> <a href="{{url('/')}}" ><span> <i class="fas fa-home"></i> </span><span class="hide-menu">Home</span></a></li>
                     <li> <a href="{{url('/visitor')}}" ><span> <i class="fas fa-users"></i> </span><span class="hide-menu">Visitor</span></a></li>
-                    <li> <a onclick="getServiceData()"><span> <i class="fas fa-globe"></i> </span><span class="hide-menu">Services</span></a></li>
+                    <li> <a href="{{url('/service')}}" ><span> <i class="fas fa-globe"></i> </span><span class="hide-menu">Services</span></a></li>
+                    <li> <a href="{{url('/courses')}}" ><span> <i class="fas fa-book-open"></i> </span><span class="hide-menu">Courses</span></a></li>
+                    <li> <a href="{{url('/project')}}" ><span> <i class="fas fa-code "></i> </span><span class="hide-menu">Project</span></a></li>
+                    <li> <a href="{{url('/contact')}}" ><span> <i class="fas fa-envelope "></i> </span><span class="hide-menu">Contact</span></a></li>
+                    <li> <a href="{{url('/blog')}}" ><span> <i class="fas fa-blog"></i> </span><span class="hide-menu">Blog</span></a></li>
+                    <li> <a href="{{url('/review')}}" ><span> <i class="fas fa-comments"></i> </span><span class="hide-menu">Review</span></a></li>
+                    <li> <a href="{{url('/photo')}}" ><span> <i class="fas fa-image"></i> </span><span class="hide-menu">Photo Gallery</span></a></li>
                 </ul>
             </nav>
         </div>
     </aside>
-<div class="page-wrapper"> --}}
-{{-- <script src="{{asset('js/custom.js')}}"></script> --}}
+<div class="page-wrapper">

@@ -1,5 +1,7 @@
 @extends('layouts.app')
+@section('title','Visitor')
 @section('content')
+
 <div class="container">
     <div class="row">
     <div class="col-md-12 p-5">
@@ -12,22 +14,31 @@
         </tr>
       </thead>
       <tbody>
-        @foreach ($visitor as $visitor)
+        @foreach ($visitor as $v)
         <tr>
-            <th class="th-sm">{{$visitor->id}}</th>
-            <th class="th-sm">{{$visitor->ip_address}}</th>
-            <th class="th-sm">{{date('d-mS-Y H:i:s A', strtotime($visitor->visitingTime))}}</th>
-          </tr>
+            <th class="th-sm">{{$v->id}}</th>
+            <th class="th-sm">{{$v->ip_address}}</th>
+            <th class="th-sm">{{$v->visit_time}}</th>
+          </tr>  
         @endforeach
-        
-        
+        	
       </tbody>
     </table>
     
     </div>
     </div>
-    </div> 
+    </div>
 
 
+@endsection
 
+@section('script')
+<script type="text/javascript">
+// Visitor table
+$(document).ready(function() {
+    $('#VisitorDt').DataTable();
+    $('.dataTables_length').addClass('bs-select');
+});
+
+</script>
 @endsection

@@ -1,5 +1,11 @@
+@section('title','Home')
 @extends('layouts.app')
 @section('content')
-@include('component.HomeBanner')
-@include('component.HomeService')
+@include('Component.HomeBanner')
+@include('Component.HomeService')
+@include('Component.HomeCourse')
+@include('Component.HomeProject')
+@include('Component.HomeContact')
+@include('Component.HomeBlog')
+@include('Component.HomeReview')
 @endsection

@@ -5,14 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class visitorModel extends Model
+class VisitorModel extends Model
 {
-    use HasFactory;
-    public $table ='visitor';
-    public $primarykey='id';
-    public $incrementing =true;
-    public $keyType ='integer';
-    public $timeStamps =false;
-
+    
+    public $table='visitor';
+    public $primaryKey='id';
+    public $incrementing=true;
+    public $keyType='int';
+    public  $timestamps=false;
 
 }
